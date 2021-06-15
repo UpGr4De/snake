@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Snake Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background: #222;
+		}
+		canvas{
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			border: 6px solid #7C7D6B;
+			z-index: 1;
+		}
+		#telaFinal{
+			display: none;
+			position: relative;
+			margin: 0 auto;
+			margin-top: -500px;
+			height: 200px;
+			width: 500px;
+			border-radius: 4px;
+			background-color: #7C7D6B;
+			box-shadow: 1px 1px 1px 1px black;
+			padding-top: 40px;
+			z-index: 9999;
+			font-family: 'Press Start 2P', cursive;
+			font-size: 40px;
+			text-align: center;
+			color: #979980;
+			text-shadow: 1px 1px 1px black;
+		}
+		a{
+			font-family: 'Press Start 2P', cursive;
+			font-size: 18px;
+			text-decoration: none;
+			background: transparent;
+			border: 2px solid #979980;
+			border-radius: 4px;
+			color: #979980;
+			padding: 8px;
+			text-shadow: 1px 1px 1px black;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="campo" width="600" height="600"></canvas>
+	<div id="telaFinal">
+		FIM DE JOGO
+		<br><br>
+		PONTOS: <span id="score">0</span>
+		<br><br>
+		<a href="javascript:window.location.reload();">NOVO JOGO</a>
+	</div>
+	<script src="game.js"></script>
+</body>
+</html>
